@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: clipcut-ai
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/env
+    envVars:
+      - key: PORT
+        value: "10000"
+    disk:
+      name: clipcut-data
+      mountPath: /app/app/data
+      sizeGB: 10

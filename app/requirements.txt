@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+faster-whisper
+pillow
+numpy
+imageio-ffmpeg
+opencv-python-headless
